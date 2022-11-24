@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ignat Vetoshin](https://up.htmlacademy.ru/adaptive/27/user/2209339).
-* Наставник: `Неизвестно`.
+* Наставник: [Irina Malinovskaya](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
