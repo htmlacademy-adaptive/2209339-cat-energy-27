@@ -3,6 +3,16 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  color: #ffffff;
-  background-color: $green;
+  position: relative;
+  background-size: 320px 302px;
+  background-image: url(../../img/background/index-background-mobile.png), linear-gradient(0deg, $green 0%, $green 0%);
+  background-color: $white;
+  background-repeat: no-repeat;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
 }

@@ -3,6 +3,13 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  color: #000000;
+  color: $black;
   background-color: $grey-2;
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
