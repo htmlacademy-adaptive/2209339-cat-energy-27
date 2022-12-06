@@ -7,7 +7,7 @@
   margin: 0 auto;
   width: 320px;
   background-size: 320px 302px;
-  background-image: url(../../img/background/index-background-mobile.png), linear-gradient(0deg, $green 0%, $green 0%);
+  background-image: linear-gradient(rgba($green, 85%), rgba($green, 85%)), url(../../img/background/index-background-mobile.png);
   background-color: $white;
   background-repeat: no-repeat;
   color: $white;
