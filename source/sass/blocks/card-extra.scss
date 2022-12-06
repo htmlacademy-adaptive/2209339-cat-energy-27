@@ -1,0 +1,11 @@
+.card-extra {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.card-extra__text-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

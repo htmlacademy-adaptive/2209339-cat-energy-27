@@ -3,6 +3,21 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  color: #000000;
+  color: $black;
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
+  width: 320px;
   background-color: $grey-2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

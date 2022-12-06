@@ -3,6 +3,20 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  color: #ffffff;
-  background-color: $green;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background-size: 320px 302px;
+  background-image: linear-gradient(rgba($green, 85%), rgba($green, 85%)), url("../../img/background/index-background-mobile.png");
+  background-color: $white;
+  background-repeat: no-repeat;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

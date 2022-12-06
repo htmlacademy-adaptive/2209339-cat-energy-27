@@ -1,7 +1,33 @@
-.catalog-extra__wrapper {
+.catalog-extra {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  color: #000000;
+  color: $black;
+}
+
+.catalog-extra__wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.catalog-extra__title {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

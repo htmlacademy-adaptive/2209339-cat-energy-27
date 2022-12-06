@@ -3,5 +3,16 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  color: #000000;
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
