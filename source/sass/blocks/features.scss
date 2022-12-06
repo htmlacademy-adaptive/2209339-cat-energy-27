@@ -3,7 +3,17 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
+  width: 320px;
+  margin: 0 auto;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .features__list {
