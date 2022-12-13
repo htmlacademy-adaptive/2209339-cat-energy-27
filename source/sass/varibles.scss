@@ -11,6 +11,10 @@ $special_grey-2: #666666;
 $dark_grey: #444444;
 $dark_grey-2: #222222;
 
+$border_grey: #e6e6e6;
+
+$border_grey-2: #d9d9d9;
+
 $status_error: #ff8282;
 
 $black: #000000;
@@ -20,3 +24,15 @@ $white: #ffffff;
 // Ширина вьюпорта
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

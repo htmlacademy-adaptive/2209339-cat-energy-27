@@ -1,23 +1,85 @@
-.main-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 320px;
-  min-height: 65px;
+.main-header__wrapper {
   margin: 0 auto;
-  padding: 0 20px;
-
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px 17px 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+}
+
+.main-header__logo-icon {
+  height: 37px;
+}
+
+.main-header__logo-text {
+  align-self: flex-end;
+}
+
 .main-header__toggle {
+  display: block;
   width: 30px;
   height: 37px;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle--closed {
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: relative;
+    top: 0;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+}
+
+.main-header__toggle--opened {
+  &::before,
+  &::after  {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: relative;
+    top: 7px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 5px;
+    transform: rotate(-45deg);
+  }
 }

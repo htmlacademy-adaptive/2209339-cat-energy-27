@@ -4,11 +4,14 @@
 @import "./fonts.scss";
 // mixins
 @import "./mixins.scss";
+// button
+@import "./blocks/button.scss";
 // container
 @import "./blocks/container.scss";
+// global
+@import "global.scss";
 // index
 @import "./blocks/main-header.scss";
-@import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/preview.scss";
