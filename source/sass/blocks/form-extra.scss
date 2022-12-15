@@ -1,11 +1,91 @@
-.form-extra__list {
+.form-extra {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $green;
+  }
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+
+    &::before {
+      top: 20px;
+    }
+  }
+}
+
+.form-extra__wrapper-title {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
+.form-extra__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin: 0;
+  padding: 0 14px 0 20px;
+  max-width: 141px;
+  background-color: $white;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    max-width: 182px;
+  }
+}
+
+.form-extra__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  row-gap: 13px;
+  column-gap: 50px;
+  padding: 0 20px;
+  margin: 34px 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 64px;
+    row-gap: 32px;
+    padding: 0 40px;
+    margin: 55px 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+    margin: 60px auto;
+    width: 1220px;
+  }
+}
+
+.form-extra__list-item {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark_grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
