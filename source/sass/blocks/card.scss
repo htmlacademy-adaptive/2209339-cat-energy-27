@@ -86,9 +86,6 @@
       border-bottom: 1px $special_grey solid;
     }
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 
@@ -97,9 +94,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 38px 39px 38px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 

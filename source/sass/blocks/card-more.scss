@@ -40,9 +40,6 @@
       transform: rotate(90deg);
     }
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .card-more__title {
@@ -92,9 +89,6 @@
 .card-more__button-wrapper {
   @media (min-width: $tablet-width) {
     padding: 0 38px 39px 38px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
