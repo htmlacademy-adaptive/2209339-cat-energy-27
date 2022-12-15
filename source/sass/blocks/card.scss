@@ -1,0 +1,109 @@
+.card {
+  display: grid;
+  grid-template-areas: "img title title" "img info info" "btn btn btn";
+  align-items: flex-start;
+  column-gap: 36px;
+  row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background: linear-gradient(180deg, $white 16%, $grey 16%);
+  }
+}
+
+.card__link-img {
+  grid-area: img;
+  align-self: center;
+  width: 112px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-height: 206px;
+    width: 100%;
+  }
+}
+
+.card__img {
+  display: block;
+  margin: 0 0 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.card__link-title {
+  text-decoration: none;
+  grid-area: title;
+  color: $dark_grey-2;
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 65%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 28px auto 21px auto;
+    max-width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
+}
+
+.card__info {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  grid-area: info;
+  padding: 0;
+
+  td {
+    padding: 0;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding: 0 38px 33px 38px;
+    width: 100%;
+
+    td {
+      padding-bottom: 9px;
+      border-bottom: 1px $special_grey solid;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+
+.card__button-wrapper {
+  grid-area: btn;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 38px 39px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+}

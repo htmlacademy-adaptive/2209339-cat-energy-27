@@ -31,8 +31,34 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding: 10px 0;
+  color: $white;
+  background-color: $green;
+  text-decoration: none;
+}
+
+.catalog-button--small {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
   padding: 7px 0;
   color: $white;
   background-color: $green;
+  text-decoration: none;
+}
+
+.catalog-button--grey {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: $dark_grey;
+  background-color: $grey;
   text-decoration: none;
 }
