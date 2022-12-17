@@ -1,0 +1,67 @@
+.form-comment {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+
+    &::before {
+      top: 20px;
+    }
+  }
+}
+
+.form-comment__wrapper-title {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
+.form-comment__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin: 0;
+  padding: 0 14px 0 20px;
+  max-width: 121px;
+  background-color: $white;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    max-width: 182px;
+  }
+}
+
+.form-comment__wrapper {
+  margin: 37px 0 22px 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 76px 0 65px 0;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 76px auto 65px auto;
+    padding: 0 40px;
+    width: 1220px;
+  }
+}

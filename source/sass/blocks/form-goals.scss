@@ -1,0 +1,48 @@
+.form-goals {
+  margin: 0;
+  padding: 20px;
+  border: none;
+  border-top: 1px $border_grey-2 solid;
+  border-bottom: 1px $border_grey-2 solid;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px;
+    padding: 25px 27px;
+    border: 1px $border_grey-2 solid;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-goals__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-goals__list-item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form-goals__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark_grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

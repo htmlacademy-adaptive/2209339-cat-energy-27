@@ -1,8 +1,34 @@
 .promotion__wrapper {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  padding: 35px 0;
+  border-top: 1px $special_grey solid;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 0 76px 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 80px;
+    border: none;
+  }
+}
+
+.promotion__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 37px;
-  color: $black;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  padding: 186px 60px 43px 60px;
   background-color: $green;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 124px 70px 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 184px 42px 42px 42px;
+  }
 }

@@ -1,11 +1,93 @@
 .card-extra {
+  padding: 13px 0 19px 0;
+  border-top: 1px $special_grey solid;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 38px;
+    border: 1px $special_grey solid;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 244px;
+    column-gap: 40px;
+    padding: 15px 0 16px 0;
+    border: none;
+    border-top: 1px $special_grey solid;
   }
 }
 
 .card-extra__text-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-items: center;
+  }
+}
+
+.card-extra__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.card-extra__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+  }
+}
+
+.card-extra__price {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    margin-left: 48px;
+    width: 43px;
+  }
+}
+
+.card-extra__amount {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.card-extra__button-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-extra__button {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
   }
 }

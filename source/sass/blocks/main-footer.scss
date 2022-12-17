@@ -1,23 +1,62 @@
 .main-footer {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 37px;
-  color: $black;
+  font-size: 16px;
+  line-height: 19px;
+  color: $dark_grey;
+  background-color: $grey;
 }
 
 .main-footer__wrapper {
   margin: 0 auto;
-  width: 320px;
-  background-color: $grey-2;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: $tablet-width;
+    padding: 56px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    padding: 56px 110px;
+    width: 1220px;
+  }
+}
+
+.main-footer__logo {
+  padding: 39px 0 32px 0;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-footer__social {
+  padding: 20px 0 20px 0;
+  margin: 0 20px;
+  text-align: center;
+  border-top: 1px $border_grey-2 solid;
+  border-bottom: 1px $border_grey-2 solid;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.main-footer__copyright {
+  padding: 20px 30px;
+
+  a {
+    text-decoration: none;
+    color: $dark_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
   }
 }

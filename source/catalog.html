@@ -8,36 +8,39 @@
   </head>
   <body class="page__body">
 
-    <div class="container">
 <!-- Шапка -->
       <header class="main-header">
-        <a class="logo" href="index.html">
-          <img class="logo__icon" src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32" height="37">
-          <img class="logo__text" src="img/logo/logo.svg" alt="Cat energy." width="101" height="18">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="index.html">главная</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="form.html">подбор программы</a>
-              </li>
-            </ul>
+        <div class="main-header__wrapper">
+          <div class="main-header__logo">
+            <a class="main-header__logo-icon" href="index.html">
+              <img src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32" height="37">
+            </a>
+            <a class="main-header__logo-text" href="index.html">
+              <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18">
+            </a>
+            <button class="main-header__toggle main-header__toggle--closed" type="button">
+              <span class=" main-header__toggle-text visually-hidden">Открыть меню навигации.</span>
+            </button>
           </div>
-        </nav>
+          <nav class="main-nav main-nav--closed">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="index.html">главная</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="form.html">подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 <!-- Основной блок -->
-      <main>
+      <main class="main-container">
         <!-- Основной каталог -->
         <section class="catalog-main">
           <div class="catalog-main__wrapper">
@@ -46,8 +49,10 @@
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/pro-chicken-500.png" alt="Cat Energy PRO 500 грамм с курицей.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy PRO 500 г</h3>
                   </a>
                   <table class="card__info">
@@ -65,15 +70,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/pro-chicken-1000.png" alt="Cat Energy PRO 1000 грамм с курицей.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                   </a>
                   <table class="card__info">
@@ -91,15 +98,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/pro-fish-500.png" alt="Cat Energy PRO 500 грамм с рыбой.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy PRO 500 г</h3>
                   </a>
                   <table class="card__info">
@@ -117,15 +126,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/pro-fish-1000.png" alt="Cat Energy PRO 1000 грамм с рыбой.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy PRO 1000 г</h3>
                   </a>
                   <table class="card__info">
@@ -143,15 +154,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/slim-buckwheat-500.png" alt="Cat Energy Slim 500 грамм с гречкой.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy Slim 500 г</h3>
                   </a>
                   <table class="card__info">
@@ -169,15 +182,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/slim-buckwheat-1000.png" alt="Cat Energy Slim 1000 грамм с гречкой.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy Slim 1000 г</h3>
                   </a>
                   <table class="card__info">
@@ -195,15 +210,17 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <!-- Карточка продукта -->
               <li class="catalog-main__item">
                 <div class="card">
-                  <a href="#" class="card__link">
+                  <a href="#" class="card__link-img">
                     <img class="card__img" src="img/product/slim-rise-500.png" alt="Cat Energy Slim 500 грамм с рисом.">
+                  </a>
+                  <a href="#" class="card__link-title">
                     <h3 class="card__title">Cat Energy Slim 500 г</h3>
                   </a>
                   <table class="card__info">
@@ -221,7 +238,7 @@
                     </tr>
                   </table>
                   <div class="card__button-wrapper">
-                    <a class="card__button" href="#">Заказать</a>
+                    <a class="card__button catalog-button" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
@@ -231,7 +248,7 @@
                   <h3 class="card-more__title">Показать еще 100500 товаров</h3>
                   <p class="card-more__text">На самом деле вкусов гораздо больше!</p>
                   <div class="card-more__button-wrapper">
-                    <a class="card-more__button" href="#">показать все</a>
+                    <a class="card-more__button catalog-button--grey" href="#">показать все</a>
                   </div>
                 </div>
               </li>
@@ -240,7 +257,9 @@
         </section>
         <!-- Дополнительный каталог -->
         <section class="catalog-extra">
-          <h2 class="catalog-extra__title">Дополнительные товары</h2>
+          <div class="catalog-extra__wrapper-title">
+            <h2 class="catalog-extra__title">Дополнительные товары</h2>
+          </div>
           <div class="catalog-extra__wrapper">
             <ul class="catalog-extra__list">
               <!-- Карточка -->
@@ -254,7 +273,7 @@
                     </p>
                   </div>
                   <div class="card-extra__button-wrapper">
-                    <a class="card-extra__button" href="#">заказать</a>
+                    <a class="card-extra__button catalog-button--small" href="#">заказать</a>
                   </div>
                 </div>
               </li>
@@ -269,7 +288,7 @@
                     </p>
                   </div>
                   <div class="card-extra__button-wrapper">
-                    <a class="card-extra__button" href="#">заказать</a>
+                    <a class="card-extra__button catalog-button--small" href="#">заказать</a>
                   </div>
                 </div>
               </li>
@@ -284,7 +303,7 @@
                     </p>
                   </div>
                   <div class="card-extra__button-wrapper">
-                    <a class="card-extra__button" href="#">заказать</a>
+                    <a class="card-extra__button catalog-button--small" href="#">заказать</a>
                   </div>
                 </div>
               </li>
@@ -299,7 +318,7 @@
                     </p>
                   </div>
                   <div class="card-extra__button-wrapper">
-                    <a class="card-extra__button" href="#">заказать</a>
+                    <a class="card-extra__button catalog-button--small" href="#">заказать</a>
                   </div>
                 </div>
               </li>
@@ -315,9 +334,14 @@
         <!-- Блок с картой -->
         <section class="map">
           <div class="map__wrapper">
-            <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <p class="map__contacts">ул. Большая
-              Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="map__info">
+              <h3 class="map__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
+              <p class="map__contacts">ул. Большая
+                Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            </div>
+            <div class="map__iframe">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2ab54447d28b3e8423ce1c57c8fdcf122c2c1ae9bb393f6c7f43bec0b8833e7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
           </div>
         </section>
       </main>
@@ -347,7 +371,6 @@
           </div>
         </div>
       </footer>
-    </div>
-
+    <script src="/js/script.js"></script>
   </body>
 </html>

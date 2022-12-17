@@ -8,45 +8,48 @@
   </head>
   <body class="page__body">
 
-    <div class="container">
 <!-- Шапка -->
       <header class="main-header">
-        <a class="logo" href="index.html">
-          <img class="logo__icon" src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32" height="37">
-          <img class="logo__text" src="img/logo/logo.svg" alt="Cat energy." width="101" height="18">
-        </a>
-        <button class="main-header__toggle" type="button"></button>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="index.html">главная</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="form.html">подбор программы</a>
-              </li>
-            </ul>
+        <div class="main-header__wrapper">
+          <div class="main-header__logo">
+            <a class="main-header__logo-icon" href="index.html">
+              <img src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32" height="37">
+            </a>
+            <a class="main-header__logo-text" href="index.html">
+              <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18">
+            </a>
+            <button class="main-header__toggle main-header__toggle--closed" type="button">
+              <span class=" main-header__toggle-text visually-hidden">Открыть меню навигации.</span>
+            </button>
           </div>
-        </nav>
+          <nav class="main-nav main-nav--closed">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="index.html">главная</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="form.html">подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 <!-- Основной блок -->
-      <main>
+      <main class="main-container">
         <!-- Промо блок -->
         <section class="promo">
           <div class="promo__wrapper">
             <div class="promo__info">
               <h1 class="promo__title">Функциональное питание для котов</h1>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
+              <a class="promo__link index-button" href="form.html" class="promo__link">подобрать программу</a>
+              <img src="img/product/index-can-mobile.png" alt="Cat energy с курицей" width="280" height="270">
             </div>
-            <img src="img/product/index-can-mobile.png" alt="Cat energy с курицей">
-            <a href="form.html" class="promo__link">подобрать программу</a>
           </div>
         </section>
         <!-- Превью блок -->
@@ -108,7 +111,7 @@
                 <span class="slider__achievement-value">60 ДНЕЙ</span>
                 <span class="slider__achievement-label">затрачено времени</span>
               </div>
-              <p class="slider__costs">затрачено времени
+              <p class="slider__costs">Затраты на питание:
                 <span class="slider__costs-amount">15 000 РУБ.</span>
               </p>
             </div>
@@ -117,9 +120,14 @@
         <!-- Блок с картой -->
         <section class="map">
           <div class="map__wrapper">
-            <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <p class="map__contacts">ул. Большая
-              Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="map__info">
+              <h3 class="map__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
+              <p class="map__contacts">ул. Большая
+                Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            </div>
+            <div class="map__iframe">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2ab54447d28b3e8423ce1c57c8fdcf122c2c1ae9bb393f6c7f43bec0b8833e7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
           </div>
         </section>
       </main>
@@ -149,7 +157,6 @@
           </div>
         </div>
       </footer>
-    </div>
-
+    <script src="/js/script.js"></script>
   </body>
 </html>
