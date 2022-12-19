@@ -1,3 +1,28 @@
+.main-header {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(180deg, rgba($green, 85%) 0%, rgba($green, 85%) 0%), url("../../img/background/index-background-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: linear-gradient(180deg, rgba($green, 85%) 0%, rgba($green, 85%) 0%), url("../../img/background/index-background-desktop@2x.png");
+      }
+    }
+  }
+}
+
 .main-header__wrapper {
   margin: 0 auto;
 
