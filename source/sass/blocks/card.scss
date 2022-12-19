@@ -2,7 +2,6 @@
   display: grid;
   grid-template-areas: "img title title" "img info info" "btn btn btn";
   align-items: flex-start;
-  column-gap: 36px;
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
@@ -13,22 +12,26 @@
 
 .card__link-img {
   grid-area: img;
-  align-self: center;
-  width: 112px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 140px;
+  height: 112px;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    min-height: 206px;
+    align-items: center;
+    height: 245px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 
 .card__img {
-  display: block;
-  margin: 0 0 0 auto;
-
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 }
 
@@ -51,8 +54,8 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 28px auto 21px auto;
-    max-width: 45%;
+    margin: 0 auto 21px auto;
+    max-width: 155px;
   }
 
   @media (min-width: $desktop-width) {
