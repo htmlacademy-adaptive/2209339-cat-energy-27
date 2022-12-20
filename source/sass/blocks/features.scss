@@ -8,7 +8,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 110px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 37px 137px;
     margin: 32px 0 47px;
+    counter-reset: index;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +52,7 @@
 }
 
 .features__item {
+  position: relative;
   list-style: none;
   min-height: 60px;
 
@@ -59,6 +61,110 @@
     align-items: flex-end;
     justify-content: flex-start;
     min-height: 280px;
+  }
+
+  &--one {
+    background-image: url(../../img/background/group-1.svg);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-size: 80px 80px;
+      background-position: 0 40px;
+
+      &::before {
+        font-family: "Oswald", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+        color: $grey;
+        counter-increment: index;
+        content: counters(index, ".", decimal) "";
+        position: absolute;
+        top: 0;
+        right: 20px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &--two {
+    background-image: url(../../img/background/group-2.svg);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-size: 80px 80px;
+      background-position: 0 40px;
+
+      &::before {
+        font-family: "Oswald", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+        color: $grey;
+        counter-increment: index;
+        content: counters(index, ".", decimal) "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  &--three {
+    background-image: url(../../img/background/group-3.svg);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-size: 80px 80px;
+      background-position: 0 40px;
+
+      &::before {
+        font-family: "Oswald", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+        color: $grey;
+        counter-increment: index;
+        content: counters(index, ".", decimal) "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  &--four {
+    background-image: url(../../img/background/group-4.svg);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-size: 80px 80px;
+      background-position: 0 40px;
+
+      &::before {
+        font-family: "Oswald", sans-serif;
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 280px;
+        color: $grey;
+        counter-increment: index;
+        content: counters(index, ".", decimal) "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -70,5 +176,10 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 57px 0;
+    max-width: 85%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 }
