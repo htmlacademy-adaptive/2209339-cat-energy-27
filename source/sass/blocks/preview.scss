@@ -132,14 +132,26 @@
   display: block;
   position: relative;
   padding-top: 19px;
+  color: $black;
 
   &::before {
     content: "";
     display: block;
-    height: 1px;
     position: relative;
+    height: 1px;
     bottom: 19px;
     background-color: $border_grey-2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 21px;
+    left: 97px;
+    background-image: url(../../img/icon/arrow.svg);
   }
 
   @media (min-width: $tablet-width) {

@@ -1,6 +1,7 @@
 .form-field__item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .form-field__text {
@@ -46,4 +47,13 @@
     min-height: 174px;
     padding: 0 19px;
   }
+}
+
+.form-field__icon {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 16px;
+  top: 16px;
+  right: 15px;
 }
