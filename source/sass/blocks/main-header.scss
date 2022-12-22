@@ -60,6 +60,18 @@
 .main-header__logo-icon {
   height: 37px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -67,6 +79,18 @@
 
 .main-header__logo-text {
   align-self: flex-end;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;

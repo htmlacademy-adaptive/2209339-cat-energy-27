@@ -11,3 +11,19 @@
   display: flex;
   align-items: flex-end;
 }
+
+.social__icon {
+  fill: $special_grey-2;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

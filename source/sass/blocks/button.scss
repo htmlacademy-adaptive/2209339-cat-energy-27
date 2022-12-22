@@ -1,64 +1,53 @@
-.index-button {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 7px 0;
-  color: $white;
-  background-color: $green;
-  text-decoration: none;
-}
+.button {
+  &--green {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: $white;
+    background-color: $green;
+    text-decoration: none;
 
-.form-button {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 7px 0;
-  color: $white;
-  background-color: $green;
-  text-decoration: none;
-}
+    &:hover {
+      background-color: $green-2;
+    }
 
-.catalog-button {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 0;
-  color: $white;
-  background-color: $green;
-  text-decoration: none;
-}
+    &:focus {
+      background-color: $green-2;
+    }
 
-.catalog-button--small {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 7px 0;
-  color: $white;
-  background-color: $green;
-  text-decoration: none;
-}
+    &:active {
+      background-color: $green-2;
+      color: transparentize($color: $white, $amount: 0.3);
+    }
+  }
 
-.catalog-button--grey {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 0;
-  color: $dark_grey;
-  background-color: $grey;
-  text-decoration: none;
+  &--grey {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: $dark_grey;
+    background-color: $grey;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $grey-2;
+    }
+
+    &:focus {
+      background-color: $grey-2;
+    }
+
+    &:active {
+      background-color: $grey-2;
+      color: transparentize($color: $dark_grey, $amount: 0.3);
+    }
+  }
 }

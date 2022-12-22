@@ -37,6 +37,22 @@
   display: flex;
   align-items: center;
   gap: 15px;
+
+  &:hover .form-goals__mark-radio {
+    border: 1px $grey-3 solid;
+  }
+
+  &:focus .form-goals__mark-radio {
+    border: 1px $grey-3 solid;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .form-goals__mark-radio {

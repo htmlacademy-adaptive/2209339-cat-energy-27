@@ -54,7 +54,50 @@
 .main-nav__link {
   text-decoration: none;
   text-align: center;
+  position: relative;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active-index {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+
+      @media (min-width: $desktop-width) {
+        background-color: $white;
+      }
+    }
+  }
+
+  &--active {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     color: $black;

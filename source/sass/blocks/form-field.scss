@@ -33,6 +33,39 @@
   border: 1px $border_grey-4 solid;
   color: $dark_grey;
 
+  &--error {
+    outline: $status_error solid;
+
+    & + svg {
+      fill: $status_error;
+      stroke: $status_error;
+    }
+  }
+
+  &:hover {
+    border: 1px $special_grey solid;
+  }
+
+  &:focus {
+    outline: 2px $dark_grey solid;
+  }
+
+  &:focus + .form-field__icon {
+    stroke: $green;
+  }
+
+  &:active {
+    outline: 2px $dark_grey solid;
+  }
+
+  &:active + .form-field__icon {
+    stroke: $green;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -50,10 +83,10 @@
 }
 
 .form-field__icon {
-  content: "";
   position: absolute;
   width: 18px;
   height: 16px;
   top: 16px;
   right: 15px;
+  stroke: $black;
 }
