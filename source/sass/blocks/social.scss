@@ -1,6 +1,29 @@
 .social__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 132px;
+}
+
+.social__item {
+  display: flex;
+  align-items: flex-end;
+}
+
+.social__icon {
+  fill: $special_grey-2;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

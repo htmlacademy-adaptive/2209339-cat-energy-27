@@ -17,26 +17,31 @@
         <div class="main-header__wrapper">
           <div class="main-header__logo">
             <a class="main-header__logo-icon" href="index.html">
-              <img src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32" height="37">
+              <img src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32"
+                height="37" />
             </a>
             <a class="main-header__logo-text" href="index.html">
-              <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/logo/logo-tab-desk.svg" width="202px" heigth="60px" />
+                <source media="(min-width:768px)" srcset="img/logo/logo-tab-desk.svg" width="174px" heigth="52px" />
+                <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18" />
+              </picture>
             </a>
             <button class="main-header__toggle main-header__toggle--closed" type="button">
-              <span class=" main-header__toggle-text visually-hidden">Открыть меню навигации.</span>
+              <span class="main-header__toggle-text visually-hidden">Открыть меню навигации.</span>
             </button>
           </div>
           <nav class="main-nav main-nav--closed">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
+                <li class="main-nav__item">
                   <a class="main-nav__link" href="index.html">главная</a>
                 </li>
-                <li class="main-nav__item main-nav__item--active">
+                <li class="main-nav__item">
                   <a class="main-nav__link" href="catalog.html">каталог продукции</a>
                 </li>
-                <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__link" href="form.html">подбор программы</a>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--active" href="form.html">подбор программы</a>
                 </li>
               </ul>
             </div>
@@ -61,7 +66,7 @@
                 <div class="form-field">
                   <label class="form-field__item">
                     <span class="form-field__text">ИМЯ:*</span>
-                    <input type="text" class="form-field__input" name="Имя" placeholder="Барсик" required>
+                    <input type="text" class="form-field__input form-field__input--error" name="Имя" placeholder="Барсик" required>
                   </label>
                 </div>
                 <div class="form-field">
@@ -83,19 +88,22 @@
                 <ul class="form-goals__list">
                   <li class="form-goals__list-item">
                     <label class="form-goals__item">
-                      <input type="radio" class="form-goals__input" name="Программа" value="Похудение">
+                      <input type="radio" class="form-goals__input visually-hidden" name="Программа" value="Похудение" checked>
+                      <span class="form-goals__mark-radio"></span>
                       <span class="form-goals__text">Похудение</span>
                     </label>
                   </li>
                   <li class="form-goals__list-item">
                     <label class="form-goals__item">
-                      <input type="radio" class="form-goals__input" name="Программа" value="Набор массы">
+                      <input type="radio" class="form-goals__input visually-hidden" name="Программа" value="Набор массы">
+                      <span class="form-goals__mark-radio"></span>
                       <span class="form-goals__text">Набор массы</span>
                     </label>
                   </li>
                   <li class="form-goals__list-item">
                     <label class="form-goals__item">
-                      <input type="radio" class="form-goals__input" name="Программа" value="Не знаю (Нужен ваш совет)">
+                      <input type="radio" class="form-goals__input visually-hidden" name="Программа" value="Не знаю (Нужен ваш совет)">
+                      <span class="form-goals__mark-radio"></span>
                       <span class="form-goals__text">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
@@ -111,13 +119,19 @@
                 <div class="form-field">
                   <label class="form-field__item">
                     <span class="form-field__text">E-mail:*</span>
-                    <input type="email" class="form-field__input" name="E-mail" placeholder="kuklachev@gmail.com" required>
+                    <input type="email" class="form-field__input form-field__input--error" name="E-mail" placeholder="kuklachev@gmail.com" required>
+                    <svg class="form-field__icon" width="18" height="14">
+                      <use href="img/icon/sprite.svg#icon-email"></use>
+                    </svg>
                   </label>
                 </div>
                 <div class="form-field">
                   <label class="form-field__item">
                     <span class="form-field__text">Телефон:*</span>
                     <input type="tel" class="form-field__input" name="Телефон" placeholder="8 (960) 900-60-90" required>
+                    <svg class="form-field__icon" width="16" height="16">
+                      <use href="img/icon/sprite.svg#icon-phone"></use>
+                    </svg>
                   </label>
                 </div>
               </div>
@@ -141,25 +155,29 @@
               <ul class="form-extra__list">
                 <li class="form-extra__list-item">
                   <label class="form-extra__item">
-                    <input type="checkbox" class="form-extra__input" name="сахарозаменитель">
+                    <input type="checkbox" class="form-extra__input visually-hidden" name="сахарозаменитель" checked>
+                    <span class="form-goals__mark"></span>
                     <span class="form-extra__text">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form-extra__list-item">
                   <label class="form-extra__item">
-                    <input type="checkbox" class="form-extra__input" name="Питьевая вода">
+                    <input type="checkbox" class="form-extra__input visually-hidden" name="Питьевая вода">
+                    <span class="form-goals__mark"></span>
                     <span class="form-extra__text">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form-extra__list-item">
                   <label class="form-extra__item">
-                    <input type="checkbox" class="form-extra__input" name="Молоко">
+                    <input type="checkbox" class="form-extra__input visually-hidden" name="Молоко">
+                    <span class="form-goals__mark"></span>
                     <span class="form-extra__text">Молоко</span>
                   </label>
                 </li>
                 <li class="form-extra__list-item">
                   <label class="form-extra__item">
-                    <input type="checkbox" class="form-extra__input" name="Витамины">
+                    <input type="checkbox" class="form-extra__input visually-hidden" name="Витамины">
+                    <span class="form-goals__mark"></span>
                     <span class="form-extra__text">Витамины</span>
                   </label>
                 </li>
@@ -167,7 +185,7 @@
             </fieldset>
             <!-- Блок с кнопкой формы -->
             <section class="form-submit">
-              <button class="form-submit__button form-button" type="submit">Отправить заявку</button>
+              <button class="form-submit__button button button--green" type="submit">Отправить заявку</button>
               <p class="form-submit__text">* — Обязательные поля</p>
             </section>
           </div>
@@ -191,24 +209,43 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
             <a href="index.html" class="logo">
-              <img class="logo__text" src="img/logo/logo.svg" alt="Cat energy.">
+              <img class="logo__text" src="img/logo/logo.svg" alt="Cat energy." />
             </a>
           </div>
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="https://vk.com/htmlacademy" class="social__link">Мы в Вконтакте.</a>
+                <a href="https://vk.com/htmlacademy" class="social__link">
+                  <span class="visually-hidden">Мы в Вконтакте.</span>
+                  <svg class="social__icon" width="27" height="17">
+                    <use href="img/icon/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">Мы в Ютубе</a>
+                <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
+                  <span class="visually-hidden">Мы в Ютубе.</span>
+                  <svg class="social__icon" width="24" height="19">
+                    <use href="img/icon/sprite.svg#icon-yt"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="https://t.me/htmlacademy" class="social__link">Мы в Телеграме</a>
+                <a href="https://t.me/htmlacademy" class="social__link">
+                  <span class="visually-hidden">Мы в Телеграме.</span>
+                  <svg class="social__icon" width="20" height="17">
+                    <use href="img/icon/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="main-footer__copyright copyright">
-            <a href="https://htmlacademy.ru/" class="copyright__link">HTML Academy</a>
+          <div class="main-footer__copyright">
+            <a href="https://htmlacademy.ru/" class="main-footer__copyright-link">HTML Academy
+              <svg class="main-footer__copyright-icon" width="27" height="34">
+                <use href="img/icon/sprite.svg#icon-ha"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

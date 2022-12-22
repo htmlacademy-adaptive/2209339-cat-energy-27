@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 56px 30px;
   }
 
@@ -26,6 +27,18 @@
   padding: 39px 0 32px 0;
   margin: 0 auto;
   text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -58,5 +71,31 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+  }
+}
+
+.main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .main-footer__copyright-icon {
+    fill: $green;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__copyright-icon {
+  fill: $special_grey-2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
   }
 }

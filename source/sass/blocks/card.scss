@@ -49,6 +49,7 @@
   text-transform: uppercase;
   margin: 0;
   max-width: 65%;
+  color: $dark_grey-2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -70,6 +71,7 @@
   line-height: 16px;
   grid-area: info;
   padding: 0;
+  color: $dark_grey;
 
   td {
     padding: 0;
