@@ -37,7 +37,7 @@
     outline: $status_error solid;
 
     & + svg {
-      fill: $status_error;
+      // fill: $status_error;
       stroke: $status_error;
     }
   }
@@ -89,4 +89,5 @@
   top: 16px;
   right: 15px;
   stroke: $black;
+  fill: none;
 }
