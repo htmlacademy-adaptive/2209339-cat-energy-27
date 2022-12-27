@@ -1,3 +1,18 @@
+.slider {
+  padding: 0 0 40px 0;
+  background-color: $grey-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 101px 0;
+    background: linear-gradient(180deg, $white 57.2%, $grey-4 57.2%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background: linear-gradient(180deg, $white 22.7%, $grey 22.7%);
+  }
+}
+
 .slider__wrapper {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -6,13 +21,13 @@
   margin: 0 auto;
   padding: 0 20px;
   color: $black;
-  background-color: $grey-2;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     padding: 0 110px;
     width: 1220px;
   }
@@ -67,7 +82,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 54px auto 104px auto;
+    margin: 54px auto 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 100%;
@@ -117,7 +132,7 @@
   top: 48px;
   right: 19px;
   width: 87px;
-  background-color: $grey-2;
+  background-color: $grey-4;
   color: $dark_grey;
 
   @media (min-width: $tablet-width) {
@@ -128,6 +143,11 @@
     left: 20px;
     padding: 0;
     width: 125px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
   }
 }
 
@@ -167,5 +187,88 @@
     position: relative;
     top: 0;
     margin: 0 0 0 60px;
+  }
+}
+
+.slider__wrapper-picture {
+  margin: 20px auto 0 auto;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    margin: 104px auto 0 auto;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 224px;
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__before {
+  position: absolute;
+  clip: rect(auto 140px auto auto);
+
+  @media (min-width: $tablet-width) {
+    clip: rect(auto 280px auto auto);
+  }
+}
+
+.slider__after {
+  position: absolute;
+  clip: rect(auto auto auto 140px);
+
+  @media (min-width: $tablet-width) {
+    clip: rect(auto auto auto 280px);
+  }
+}
+
+.slider__button {
+  position: absolute;
+  margin-left: 138px;
+  padding: 0;
+  height: 256px;
+  width: 4px;
+  background-color: $special_grey-2;
+  border: none;
+  border-radius: 2px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 278px;
+    height: 506px;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.slider__icon {
+  position: absolute;
+  top: 108px;
+  right: -18px;
+  background-color: white;
+  border-radius: 50%;
+  fill: none;
+  stroke: $special_grey-2;
+
+  path {
+    fill: $special_grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
+
+  &:hover {
+    stroke: $green;
+
+    path {
+      fill: $green;
+    }
   }
 }
