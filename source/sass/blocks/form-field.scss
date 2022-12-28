@@ -37,7 +37,6 @@
     outline: $status_error solid;
 
     & + svg {
-      // fill: $status_error;
       stroke: $status_error;
     }
   }
@@ -64,6 +63,14 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  &:invalid {
+    outline: $status_error solid;
+
+    & + svg {
+      stroke: $status_error;
+    }
   }
 
   @media (min-width: $tablet-width) {
