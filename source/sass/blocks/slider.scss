@@ -245,6 +245,10 @@
   &:hover {
     background-color: $green;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .slider__icon {
