@@ -37,7 +37,6 @@
     outline: $status_error solid;
 
     & + svg {
-      fill: $status_error;
       stroke: $status_error;
     }
   }
@@ -66,6 +65,14 @@
     opacity: 0.3;
   }
 
+  &:invalid {
+    outline: $status_error solid;
+
+    & + svg {
+      stroke: $status_error;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -75,6 +82,7 @@
 .form-field__input--textarea {
   padding: 0 14px;
   min-height: 150px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
@@ -89,4 +97,5 @@
   top: 16px;
   right: 15px;
   stroke: $black;
+  fill: none;
 }

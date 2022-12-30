@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icon/apple-icon.png">
@@ -23,8 +23,8 @@
         </a>
         <a class="main-header__logo-text" href="index.html">
           <picture>
-            <source media="(min-width:1440px)" srcset="img/logo/logo-tab-desk.svg" width="202px" heigth="60px" />
-            <source media="(min-width:768px)" srcset="img/logo/logo-tab-desk.svg" width="174px" heigth="52px" />
+            <source media="(min-width:1440px)" srcset="img/logo/logo-tab-desk.svg" width="202" heigth="60" />
+            <source media="(min-width:768px)" srcset="img/logo/logo-tab-desk.svg" width="174" heigth="52" />
             <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18" />
           </picture>
         </a>
@@ -59,19 +59,19 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source media="(min-width:1440px)" type="image/webp"
-              srcset="img/product/index-can.webp 1x, img/product/index-can@2x.webp 2x" width="552px" heigth="499px" />
+              srcset="img/product/index-can.webp 1x, img/product/index-can@2x.webp 2x" width="552" heigth="499" />
             <source media="(min-width:768px)" type="image/webp"
-              srcset="img/product/index-can-tablet.webp 1x, img/product/index-can-tablet@2x.webp 2x" width="709px" heigth="609px" />
+              srcset="img/product/index-can-tablet.webp 1x, img/product/index-can-tablet@2x.webp 2x" width="709" heigth="609" />
             <source type="image/webp" srcset="img/product/index-can-mobile.webp 1x, img/product/index-can-mobile@2x.webp 2x" width="280" height="270" />
 
             <source media="(min-width:1440px)" srcset="
                   img/product/index-can.png    1x,
                   img/product/index-can@2x.png 2x
-                " width="552px" heigth="499px" />
+                " width="552" heigth="499" />
             <source media="(min-width:768px)" srcset="
                   img/product/index-can-tablet.png    1x,
                   img/product/index-can-tablet@2x.png 2x
-                " width="709px" heigth="609px" />
+                " width="709" heigth="609" />
             <img class="promo__img" src="img/product/index-can-mobile.png"
               srcset="img/product/index-can-mobile@2x.png 2x" alt="Cat energy с курицей" width="280" height="270" />
           </picture>
@@ -138,26 +138,73 @@
     <!-- Слайдер блок -->
     <section class="slider">
       <div class="slider__wrapper">
-        <h1 class="slider__title">Живой пример</h1>
-        <p class="slider__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в
-          день.
-        </p>
-        <div class="slider__wrapper-achievement">
-          <div class="slider__achievement">
-            <span class="slider__achievement-value">5 КГ</span>
-            <span class="slider__achievement-label">снижение веса</span>
-          </div>
-          <div class="slider__achievement">
-            <span class="slider__achievement-value">60 ДНЕЙ</span>
-            <span class="slider__achievement-label">затрачено времени</span>
-          </div>
-          <p class="slider__costs">
-            Затраты на питание:
-            <span class="slider__costs-amount">15 000 РУБ.</span>
+        <div class="slider__wrapper-text">
+          <h1 class="slider__title">Живой пример</h1>
+          <p class="slider__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
           </p>
+          <div class="slider__wrapper-achievement">
+            <div class="slider__achievement">
+              <span class="slider__achievement-value">5 КГ</span>
+              <span class="slider__achievement-label">снижение веса</span>
+            </div>
+            <div class="slider__achievement">
+              <span class="slider__achievement-value">60 ДНЕЙ</span>
+              <span class="slider__achievement-label">затрачено времени</span>
+            </div>
+            <p class="slider__costs">
+              Затраты на питание:
+              <span class="slider__costs-amount">15 000 РУБ.</span>
+            </p>
+          </div>
+        </div>
+        <div class="slider__wrapper-picture">
+          <picture>
+            <source media="(min-width:1440px)" type="image/webp"
+              srcset="img/slider/tablet-before.webp 1x, img/slider/tablet-before@2x.webp 2x" width="560" heigth="512" />
+            <source media="(min-width:768px)" type="image/webp"
+              srcset="img/slider/tablet-before.webp 1x, img/slider/tablet-before@2x.webp 2x" width="560" heigth="512" />
+            <source type="image/webp" srcset="img/slider/mobile-before.webp 1x, img/slider/mobile-before@2x.webp 2x" width="280" height="256" />
+
+            <source media="(min-width:1440px)" srcset="
+                  img/slider/tablet-before.png    1x,
+                  img/slider/tablet-before@2x.png 2x
+                " width="560" heigth="512" />
+            <source media="(min-width:768px)" srcset="
+                  img/slider/tablet-before.png    1x,
+                  img/slider/tablet-before@2x.png 2x
+                " width="560" heigth="512" />
+            <img class="slider__before" src="img/slider/mobile-before.png"
+              srcset="img/slider/mobile-before2x.png 2x" alt="После." width="280" height="256" />
+          </picture>
+          <button class="slider__button">
+            <svg class="slider__icon" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11L8 20L16 29V11Z"/>
+              <path d="M32 20L24 11V29L32 20Z"/>
+              <rect x="1" y="1" width="38" height="38" rx="19" stroke-width="2"/>
+            </svg>
+          </button>
+          <picture>
+            <source media="(min-width:1440px)" type="image/webp"
+              srcset="img/slider/tablet-after.webp 1x, img/slider/tablet-after@2x.webp 2x" width="560" heigth="512" />
+            <source media="(min-width:768px)" type="image/webp"
+              srcset="img/slider/tablet-after.webp 1x, img/slider/tablet-after@2x.webp 2x" width="560" heigth="512" />
+            <source type="image/webp" srcset="img/slider/mobile-after.webp 1x, img/slider/mobile-after@2x.webp 2x" width="280" height="256" />
+
+            <source media="(min-width:1440px)" srcset="
+                  img/slider/tablet-after.png    1x,
+                  img/slider/tablet-after@2x.png 2x
+                " width="560" heigth="512" />
+            <source media="(min-width:768px)" srcset="
+                  img/slider/tablet-after.png    1x,
+                  img/slider/tablet-after@2x.png 2x
+                " width="560" heigth="512" />
+            <img class="slider__after" src="img/slider/mobile-after.png"
+              srcset="img/slider/mobile-after2x.png 2x" alt="После." width="280" height="256" />
+          </picture>
         </div>
       </div>
     </section>
@@ -195,7 +242,7 @@
             <a href="https://vk.com/htmlacademy" class="social__link">
               <span class="visually-hidden">Мы в Вконтакте.</span>
               <svg class="social__icon" width="27" height="17">
-                <use href="img/icon/sprite.svg#icon-vk"></use>
+                <use href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -203,7 +250,7 @@
             <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
               <span class="visually-hidden">Мы в Ютубе.</span>
               <svg class="social__icon" width="24" height="19">
-                <use href="img/icon/sprite.svg#icon-yt"></use>
+                <use href="img/sprite.svg#icon-yt"></use>
               </svg>
             </a>
           </li>
@@ -211,7 +258,7 @@
             <a href="https://t.me/htmlacademy" class="social__link">
               <span class="visually-hidden">Мы в Телеграме.</span>
               <svg class="social__icon" width="20" height="17">
-                <use href="img/icon/sprite.svg#icon-tg"></use>
+                <use href="img/sprite.svg#icon-tg"></use>
               </svg>
             </a>
           </li>
@@ -220,7 +267,7 @@
       <div class="main-footer__copyright">
         <a href="https://htmlacademy.ru/" class="main-footer__copyright-link">HTML Academy
           <svg class="main-footer__copyright-icon" width="27" height="34">
-            <use href="img/icon/sprite.svg#icon-ha"></use>
+            <use href="img/sprite.svg#icon-ha"></use>
           </svg>
         </a>
       </div>

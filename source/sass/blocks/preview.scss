@@ -38,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 62px 57px 52px;
+    min-height: 238px;
 
     &:not(:last-child) {
       margin: 0 0 30px 0;
@@ -45,13 +46,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: none;
+
     &:not(:last-child) {
       margin: 0 80px 0 0;
     }
   }
 
   &--slim {
-    background-image: url(../../img/background/cat-back-slim.svg);
+    background-image: url("../../img/background/cat-back-slim.svg");
     background-size: 50px 53px;
     background-repeat: no-repeat;
     background-position: 22px 21px;
@@ -68,7 +71,7 @@
   }
 
   &--pro {
-    background-image: url(../../img/background/cat-back-pro.svg);
+    background-image: url("../../img/background/cat-back-pro.svg");
     background-size: 67px 50px;
     background-repeat: no-repeat;
     background-position: 13px 24px;
@@ -150,9 +153,9 @@
     content: "";
     display: block;
     margin-left: 15px;
-    width: 24px;
+    width: 32px;
     height: 12px;
-    background-image: url(../../img/icon/arrow.svg);
+    background-image: url("../../img/icon/arrow.svg");
     background-repeat: no-repeat;
   }
 
@@ -171,13 +174,12 @@
   }
 
   &:hover::after {
-    width: 32px;
-    background-image: url(../../img/icon/arrow-hover.svg);
+    background-size: 32px 12px;
   }
 
   &:focus::after {
     width: 32px;
-    background-image: url(../../img/icon/arrow-hover.svg);
+    background-image: url("../../img/icon/arrow-hover.svg");
   }
 
   &:active {
