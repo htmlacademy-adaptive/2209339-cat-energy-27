@@ -27,7 +27,7 @@
     padding: 0;
 
     &::before {
-      top: 100px;
+      top: 96px;
     }
   }
 }
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 35px 81px 40px;
+    padding: 70px 35px 81px 40px;
   }
 }
 

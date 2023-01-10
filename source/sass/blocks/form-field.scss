@@ -17,6 +17,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -32,6 +33,25 @@
   width: 100%;
   border: 1px $border_grey-4 solid;
   color: $dark_grey;
+
+  &--contacts {
+    padding: 0 0 0 11px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 0 0 20px;
+    }
+  }
+
+  &--textarea {
+    padding: 10px 14px 0;
+    min-height: 150px;
+    resize: none;
+
+    @media (min-width: $tablet-width) {
+      min-height: 164px;
+      padding: 10px 19px 0;
+    }
+  }
 
   &--error {
     outline: $status_error solid;
@@ -76,17 +96,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.form-field__input--textarea {
-  padding: 0 14px;
-  min-height: 150px;
-  resize: none;
-
-  @media (min-width: $tablet-width) {
-    min-height: 174px;
-    padding: 0 19px;
+    padding-left: 15px;
   }
 }
 

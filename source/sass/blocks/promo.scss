@@ -10,7 +10,7 @@
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
-  background: linear-gradient(180deg, $green 64.5%, $white 0%);
+  background: linear-gradient(180deg, $green 63.5%, $white 0%);
   color: $white;
 
 
@@ -36,7 +36,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 708px;
     background-image: none;
 
     &::before {
@@ -102,6 +103,7 @@
   line-height: 18px;
   display: block;
   width: 100%;
+  margin: 6px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -109,7 +111,7 @@
     width: 244px;
     min-width: none;
     margin: 0;
-    padding: 14px 0;
+    padding: 17px 0;
     order: 0;
   }
 }
@@ -118,7 +120,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
-    right: 30px;
+    right: 0;
     z-index: -1;
   }
 

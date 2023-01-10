@@ -2,7 +2,7 @@
   display: grid;
   grid-template-areas: "img title title" "img info info" "btn btn btn";
   align-items: flex-start;
-  row-gap: 14px;
+  row-gap: 11px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -19,19 +19,38 @@
   height: 112px;
 
   @media (min-width: $tablet-width) {
-    align-items: center;
-    height: 245px;
+    align-items: flex-start;
+    height: 234px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
+    align-items: flex-start;
+    height: 245px;
   }
 }
 
 .card__img {
+  &--small {
+    padding-bottom: 8px;
+  }
+
   @media (min-width: $tablet-width) {
-    // margin: 0 auto;
+    &--small {
+      padding-top: 28px;
+      padding-bottom: 0;
+    }
+
+    max-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--small {
+      padding-top: 32px;
+      padding-bottom: 0;
+    }
+
+    max-height: 196px;
   }
 }
 
@@ -68,7 +87,7 @@
   font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 14px;
   grid-area: info;
   padding: 0;
   color: $dark_grey;
@@ -83,12 +102,19 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding: 0 38px 33px 38px;
+    line-height: 16px;
+    padding: 0 38px 34px 38px;
     width: 100%;
 
     td {
       padding-bottom: 9px;
       border-bottom: 1px $special_grey solid;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    td {
+      padding-bottom: 12px;
     }
   }
 }

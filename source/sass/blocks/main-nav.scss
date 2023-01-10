@@ -39,10 +39,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 36px;
     position: inherit;
     background-color: inherit;
-    z-index: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 680px;
   }
 }
 
@@ -52,12 +57,12 @@
   border-top: 1px solid $border_grey;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 0 10px 36px;
+    padding: 18px 0 10px 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 0 8px 36px;
+    padding: 69px 0 8px 0;
     max-width: $desktop-width;
   }
 }

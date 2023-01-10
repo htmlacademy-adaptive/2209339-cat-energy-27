@@ -62,13 +62,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
-    margin: 76px 0 65px 0;
+    margin: 76px 0 70px 0;
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin: 76px auto 65px auto;
+    margin: 76px auto 73px auto;
     width: 1220px;
   }
 }

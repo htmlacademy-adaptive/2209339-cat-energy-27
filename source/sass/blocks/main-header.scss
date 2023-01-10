@@ -35,7 +35,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 0 30px;
   }
 
@@ -54,11 +54,12 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     margin: 0;
+    max-height: 52px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin: 0;
+    margin: 55px 0 0 0;
   }
 }
 
@@ -112,7 +113,7 @@
   width: 30px;
   height: 37px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 10px 10px;
   background-color: $white;
   cursor: pointer;
   border: none;

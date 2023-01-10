@@ -173,14 +173,25 @@
   max-width: 400px;
   color: $dark_grey;
 
+  @media (width: $tablet-width) {
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 57px 0;
-    max-width: 85%;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
+
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
   }
 }

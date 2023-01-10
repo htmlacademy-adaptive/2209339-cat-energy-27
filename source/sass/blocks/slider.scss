@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background: linear-gradient(180deg, $white 22.7%, $grey 22.7%);
+    background: linear-gradient(180deg, $white 25.7%, $grey 22.7%);
   }
 }
 
@@ -131,7 +131,7 @@
   position: absolute;
   top: 48px;
   right: 19px;
-  width: 87px;
+  width: 81px;
   background-color: $grey-4;
   color: $dark_grey;
 
@@ -202,7 +202,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 224px;
+    margin: 26px 0 0 220px;
     width: 560px;
     height: 512px;
   }

@@ -21,7 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +53,7 @@
   line-height: 14px;
   display: flex;
   justify-content: space-between;
+  margin: 13px 0;
   color: $dark_grey;
 
   @media (min-width: $tablet-width) {
@@ -90,6 +91,6 @@
   display: block;
 
   @media (min-width: $desktop-width) {
-    line-height: 26px;
+    line-height: 20px;
   }
 }
