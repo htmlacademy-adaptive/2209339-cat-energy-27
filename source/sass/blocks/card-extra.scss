@@ -21,7 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
 }
 
 .card-extra__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -47,12 +47,13 @@
 }
 
 .card-extra__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   display: flex;
   justify-content: space-between;
+  margin: 13px 0;
   color: $dark_grey;
 
   @media (min-width: $tablet-width) {
@@ -90,6 +91,6 @@
   display: block;
 
   @media (min-width: $desktop-width) {
-    line-height: 26px;
+    line-height: 20px;
   }
 }

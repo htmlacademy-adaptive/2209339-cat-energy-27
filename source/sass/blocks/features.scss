@@ -1,5 +1,5 @@
 .features__wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -18,7 +18,7 @@
 }
 
 .features__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -74,7 +74,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -100,7 +100,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -126,7 +126,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -152,7 +152,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -173,14 +173,25 @@
   max-width: 400px;
   color: $dark_grey;
 
+  @media (width: $tablet-width) {
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 57px 0;
-    max-width: 85%;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
+
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
   }
 }

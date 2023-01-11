@@ -9,12 +9,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background: linear-gradient(180deg, $white 22.7%, $grey 22.7%);
+    background: linear-gradient(180deg, $white 25.7%, $grey 22.7%);
   }
 }
 
 .slider__wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -34,7 +34,7 @@
 }
 
 .slider__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -104,7 +104,7 @@
 }
 
 .slider__achievement-value {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -131,7 +131,7 @@
   position: absolute;
   top: 48px;
   right: 19px;
-  width: 87px;
+  width: 81px;
   background-color: $grey-4;
   color: $dark_grey;
 
@@ -152,7 +152,7 @@
 }
 
 .slider__costs {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -202,7 +202,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 224px;
+    margin: 26px 0 0 220px;
     width: 560px;
     height: 512px;
   }

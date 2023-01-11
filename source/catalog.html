@@ -4,30 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/icon/apple-icon.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="css/style.min.css" as="style" />
+    <link rel="preload" href="js/script.js" as="script" />
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/icon/apple-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
+
   <body class="page__body">
     <!-- Шапка -->
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__logo">
           <a class="main-header__logo-icon" href="index.html">
-            <img src="img/logo/logo-icon-mobile.svg" alt="Интернет магазин фитнес еды для котов." width="32"
-              height="37" />
+            <img
+              src="img/logo/logo-icon-mobile.svg"
+              alt="Интернет магазин фитнес еды для котов."
+              width="32"
+              height="37"
+            />
           </a>
           <a class="main-header__logo-text" href="index.html">
             <picture>
-              <source media="(min-width:1440px)" srcset="img/logo/logo-tab-desk.svg" width="202px" heigth="60px" />
-              <source media="(min-width:768px)" srcset="img/logo/logo-tab-desk.svg" width="174px" heigth="52px" />
-              <img src="img/logo/logo.svg" alt="Cat energy." width="101" height="18" />
+              <source
+                media="(min-width:1440px)"
+                srcset="img/logo/logo-tab-desk.svg"
+                width="202"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="img/logo/logo-tab-desk.svg"
+                width="174"
+              />
+              <img
+                src="img/logo/logo.svg"
+                alt="Cat energy."
+                width="101"
+                height="18"
+              />
             </picture>
           </a>
-          <button class="main-header__toggle main-header__toggle--closed" type="button">
-            <span class="main-header__toggle-text visually-hidden">Открыть меню навигации.</span>
+          <button
+            class="main-header__toggle main-header__toggle--closed"
+            type="button"
+          >
+            <span class="main-header__toggle-text visually-hidden"
+              >Открыть меню навигации.</span
+            >
           </button>
         </div>
         <nav class="main-nav main-nav--closed">
@@ -37,7 +65,11 @@
                 <a class="main-nav__link" href="index.html">главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="catalog.html">каталог продукции</a>
+                <a
+                  class="main-nav__link main-nav__link--active"
+                  href="catalog.html"
+                  >каталог продукции</a
+                >
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">подбор программы</a>
@@ -59,11 +91,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/chiken-500.webp 1x, img/product/chiken-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/chiken-500.webp 1x, img/product/chiken-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source type="image/webp" srcset="img/product/mob-chiken-500.webp 1x, img/product/mob-chiken-500@2x.webp 2x" width="68" height="86" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/chiken-500.webp    1x,
+                        img/product/chiken-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/chiken-500.webp    1x,
+                        img/product/chiken-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-chiken-500.webp    1x,
+                        img/product/mob-chiken-500@2x.webp 2x
+                      "
+                      width="68"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -71,8 +124,7 @@
                         img/product/chiken-500.png    1x,
                         img/product/chiken-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <source
                       media="(min-width:768px)"
@@ -80,11 +132,10 @@
                         img/product/chiken-500.png    1x,
                         img/product/chiken-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <img
-                      class="card__img"
+                      class="card__img card__img--small"
                       src="img/product/mob-chiken-500.png"
                       srcset="img/product/mob-chiken-500@2x.png 2x"
                       alt="Cat Energy PRO 500 грамм с курицей."
@@ -111,7 +162,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -120,11 +173,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/chiken-1000.webp 1x, img/product/chiken-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/chiken-1000.webp 1x, img/product/chiken-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source type="image/webp" srcset="img/product/mob-chiken-1000.webp 1x, img/product/mob-chiken-1000@2x.webp 2x" width="84" height="100" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/chiken-1000.webp    1x,
+                        img/product/chiken-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/chiken-1000.webp    1x,
+                        img/product/chiken-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-chiken-1000.webp    1x,
+                        img/product/mob-chiken-1000@2x.webp 2x
+                      "
+                      width="84"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -132,8 +206,7 @@
                         img/product/chiken-1000.png    1x,
                         img/product/chiken-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <source
                       media="(min-width:768px)"
@@ -141,8 +214,7 @@
                         img/product/chiken-1000.png    1x,
                         img/product/chiken-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <img
                       class="card__img"
@@ -172,7 +244,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -181,11 +255,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/fish-500.webp 1x, img/product/fish-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/fish-500.webp 1x, img/product/fish-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source type="image/webp" srcset="img/product/mob-fish-500.webp 1x, img/product/mob-fish-500@2x.webp 2x" width="68" height="86" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/fish-500.webp    1x,
+                        img/product/fish-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/fish-500.webp    1x,
+                        img/product/fish-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-fish-500.webp    1x,
+                        img/product/mob-fish-500@2x.webp 2x
+                      "
+                      width="68"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -193,8 +288,7 @@
                         img/product/fish-500.png    1x,
                         img/product/fish-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <source
                       media="(min-width:768px)"
@@ -202,11 +296,10 @@
                         img/product/fish-500.png    1x,
                         img/product/fish-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <img
-                      class="card__img"
+                      class="card__img card__img--small"
                       src="img/product/mob-fish-500.png"
                       srcset="img/product/mob-fish-500@2x.png 2x"
                       alt="Cat Energy PRO 500 грамм с рыбой."
@@ -233,7 +326,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -242,11 +337,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/fish-1000.webp 1x, img/product/fish-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/fish-1000.webp 1x, img/product/fish-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source type="image/webp" srcset="img/product/mob-fish-1000.webp 1x, img/product/mob-fish-1000@2x.webp 2x" width="84" height="100" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/fish-1000.webp    1x,
+                        img/product/fish-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/fish-1000.webp    1x,
+                        img/product/fish-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-fish-1000.webp    1x,
+                        img/product/mob-fish-1000@2x.webp 2x
+                      "
+                      width="84"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -254,8 +370,7 @@
                         img/product/fish-1000.png    1x,
                         img/product/fish-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <source
                       media="(min-width:768px)"
@@ -263,8 +378,7 @@
                         img/product/fish-1000.png    1x,
                         img/product/fish-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <img
                       class="card__img"
@@ -294,7 +408,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -303,11 +419,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/buckwheat-500.webp 1x, img/product/buckwheat-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/buckwheat-500.webp 1x, img/product/buckwheat-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source type="image/webp" srcset="img/product/mob-buckwheat-500.webp 1x, img/product/mob-buckwheat-500@2x.webp 2x" width="68" height="86" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/buckwheat-500.webp    1x,
+                        img/product/buckwheat-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/buckwheat-500.webp    1x,
+                        img/product/buckwheat-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-buckwheat-500.webp    1x,
+                        img/product/mob-buckwheat-500@2x.webp 2x
+                      "
+                      width="68"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -315,8 +452,7 @@
                         img/product/buckwheat-500.png    1x,
                         img/product/buckwheat-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <source
                       media="(min-width:768px)"
@@ -324,11 +460,10 @@
                         img/product/buckwheat-500.png    1x,
                         img/product/buckwheat-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <img
-                      class="card__img"
+                      class="card__img card__img--small"
                       src="img/product/mob-buckwheat-500.png"
                       srcset="img/product/mob-buckwheat-500@2x.png 2x"
                       alt="Cat Energy Slim 500 грамм с гречкой."
@@ -355,7 +490,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -364,11 +501,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/buckwheat-1000.webp 1x, img/product/buckwheat-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/buckwheat-1000.webp 1x, img/product/buckwheat-1000@2x.webp 2x" width="168px" heigth="206px" />
-                    <source type="image/webp" srcset="img/product/mob-buckwheat-1000.webp 1x, img/product/mob-buckwheat-1000@2x.webp 2x" width="84" height="100" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/buckwheat-1000.webp    1x,
+                        img/product/buckwheat-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/buckwheat-1000.webp    1x,
+                        img/product/buckwheat-1000@2x.webp 2x
+                      "
+                      width="168"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-buckwheat-1000.webp    1x,
+                        img/product/mob-buckwheat-1000@2x.webp 2x
+                      "
+                      width="84"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -376,8 +534,7 @@
                         img/product/buckwheat-1000.png    1x,
                         img/product/buckwheat-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <source
                       media="(min-width:768px)"
@@ -385,8 +542,7 @@
                         img/product/buckwheat-1000.png    1x,
                         img/product/buckwheat-1000@2x.png 2x
                       "
-                      width="168px"
-                      heigth="206px"
+                      width="168"
                     />
                     <img
                       class="card__img"
@@ -416,7 +572,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -425,11 +583,32 @@
               <div class="card">
                 <a href="#" class="card__link-img">
                   <picture>
-                    <source media="(min-width:1440px)" type="image/webp"
-                      srcset="img/product/rise-500.webp 1x, img/product/rise-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source media="(min-width:768px)" type="image/webp"
-                      srcset="img/product/rise-500.webp 1x, img/product/rise-500@2x.webp 2x" width="161px" heigth="172px" />
-                    <source type="image/webp" srcset="img/product/mob-rise-500.webp 1x, img/product/mob-rise-500@2x.webp 2x" width="68" height="86" />
+                    <source
+                      media="(min-width:1440px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/rise-500.webp    1x,
+                        img/product/rise-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      type="image/webp"
+                      srcset="
+                        img/product/rise-500.webp    1x,
+                        img/product/rise-500@2x.webp 2x
+                      "
+                      width="161"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/product/mob-rise-500.webp    1x,
+                        img/product/mob-rise-500@2x.webp 2x
+                      "
+                      width="68"
+                    />
 
                     <source
                       media="(min-width:1440px)"
@@ -437,8 +616,7 @@
                         img/product/rise-500.png    1x,
                         img/product/rise-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <source
                       media="(min-width:768px)"
@@ -446,11 +624,10 @@
                         img/product/rise-500.png    1x,
                         img/product/rise-500@2x.png 2x
                       "
-                      width="161px"
-                      heigth="172px"
+                      width="161"
                     />
                     <img
-                      class="card__img"
+                      class="card__img card__img--small"
                       src="img/product/mob-rise-500.png"
                       srcset="img/product/mob-rise-500@2x.png 2x"
                       alt="Cat Energy Slim 500 грамм с рисом."
@@ -477,7 +654,9 @@
                   </tr>
                 </table>
                 <div class="card__button-wrapper">
-                  <a class="card__button button button--green" href="#">Заказать</a>
+                  <a class="card__button button button--green" href="#"
+                    >Заказать</a
+                  >
                 </div>
               </div>
             </li>
@@ -589,7 +768,7 @@
       </section>
       <!-- Блок с картой -->
       <section class="map">
-        <div class="map__wrapper">
+        <div class="map__wrapper map__wrapper--grey">
           <div class="map__info">
             <h3 class="map__title">
               Приглашаем <br />
@@ -602,10 +781,7 @@
           <div class="map__iframe">
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2ab54447d28b3e8423ce1c57c8fdcf122c2c1ae9bb393f6c7f43bec0b8833e7&amp;source=constructor"
-              width="100%"
-              height="100%"
-              frameborder="0"
-            ></iframe>
+              title="Мы находимся здесь."></iframe>
           </div>
         </div>
       </section>
@@ -614,8 +790,8 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a href="index.html" class="logo">
-            <img class="logo__text" src="img/logo/logo.svg" alt="Cat energy." />
+          <a href="index.html" class="main-footer__logo-link">
+            <img class="main-footer__logo-img" width="128" height="24" src="img/logo/logo.svg" alt="Cat energy." />
           </a>
         </div>
         <div class="main-footer__social social">
@@ -629,7 +805,10 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="social__link">
+              <a
+                href="https://www.youtube.com/user/htmlacademyru"
+                class="social__link"
+              >
                 <span class="visually-hidden">Мы в Ютубе.</span>
                 <svg class="social__icon" width="24" height="19">
                   <use href="img/sprite.svg#icon-yt"></use>
@@ -647,7 +826,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright">
-          <a href="https://htmlacademy.ru/" class="main-footer__copyright-link">HTML Academy
+          <a href="https://htmlacademy.ru/" class="main-footer__copyright-link"
+            >HTML Academy
             <svg class="main-footer__copyright-icon" width="27" height="34">
               <use href="img/sprite.svg#icon-ha"></use>
             </svg>

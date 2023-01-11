@@ -1,5 +1,5 @@
 .main-footer {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -14,17 +14,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 30px;
+    padding: 63px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 110px;
+    padding: 71px 110px;
     width: 1220px;
   }
 }
 
 .main-footer__logo {
-  padding: 39px 0 32px 0;
+  padding: 39px 0 18px 0;
   margin: 0 auto;
   text-align: center;
 
@@ -46,6 +46,13 @@
   }
 }
 
+.main-footer__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
+  }
+}
+
 .main-footer__social {
   padding: 20px 0 20px 0;
   margin: 0 20px;
@@ -61,7 +68,7 @@
 }
 
 .main-footer__copyright {
-  padding: 20px 30px;
+  padding: 20px 20px 40px 20px;
 
   a {
     text-decoration: none;

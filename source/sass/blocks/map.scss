@@ -1,13 +1,21 @@
 .map__wrapper {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
   margin: 0 auto;
   color: $black;
 
+  &--grey {
+    background-color: $grey;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 100%;
     position: relative;
   }
 }
@@ -31,14 +39,14 @@
     top: 95px;
     left: 110px;
     margin: 0;
-    padding: 56px 80px 36px 80px;
-    width: 405px;
+    padding: 60px 60px 56px 80px;
+    width: 420px;
     background-color: $white;
   }
 }
 
 .map__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -58,7 +66,7 @@
 }
 
 .map__contacts {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -80,12 +88,12 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     text-align: left;
-    margin-left: 87px;
-    max-width: 121px;
+    margin-left: 95px;
+    max-width: 157px;
 
     span {
       display: block;
-      margin: 0;
+      margin: 10px 0 0 0;
     }
   }
 }
@@ -93,6 +101,11 @@
 .map__iframe {
   width: 100%;
   height: 362px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;

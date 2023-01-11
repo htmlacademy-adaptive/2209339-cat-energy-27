@@ -1,5 +1,5 @@
 .preview__wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    padding: 82px 110px 71px 110px;
+    padding: 82px 110px 75px 110px;
   }
 }
 
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 62px 57px 52px;
+    padding: 77px 52px 57px 52px;
     min-height: 238px;
 
     &:not(:last-child) {
@@ -61,7 +61,7 @@
 
     @media (min-width: $tablet-width) {
       background-size: 200px 211px;
-      background-position: 88% 92px;
+      background-position: 88% 81px;
     }
 
     @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
 }
 
 .preview__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -117,17 +117,17 @@
     font-size: 16px;
     line-height: 24px;
     margin: 24px 0 52px 0;
-    max-width: 58%;
+    max-width: 56%;
   }
 
   @media (min-width: $desktop-width) {
     margin: 73px 0 27px 0;
-    max-width: 460px;
+    max-width: 466px;
   }
 }
 
 .preview__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
