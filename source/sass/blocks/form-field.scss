@@ -5,7 +5,7 @@
 }
 
 .form-field__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -22,7 +22,7 @@
 }
 
 .form-field__input {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -55,10 +55,10 @@
 
   &--error {
     outline: $status_error solid;
+  }
 
-    & + svg {
-      stroke: $status_error;
-    }
+  &--error + svg {
+    stroke: $status_error;
   }
 
   &:hover {

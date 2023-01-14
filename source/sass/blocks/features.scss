@@ -1,5 +1,5 @@
 .features__wrapper {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -18,7 +18,7 @@
 }
 
 .features__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -58,9 +58,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-start;
-    min-height: 280px;
+    min-height: 128px;
+    padding-top: 152px;
   }
 
   &--one {
@@ -74,7 +75,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", "Arial", sans-serif;
+        font-family: $oswald;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -100,7 +101,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", "Arial", sans-serif;
+        font-family: $oswald;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -126,7 +127,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", "Arial", sans-serif;
+        font-family: $oswald;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
@@ -152,7 +153,7 @@
       background-position: 0 40px;
 
       &::before {
-        font-family: "Oswald", "Arial", sans-serif;
+        font-family: $oswald;
         font-size: 280px;
         font-weight: 400;
         line-height: 280px;
