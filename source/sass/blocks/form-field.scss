@@ -85,13 +85,13 @@
     opacity: 0.3;
   }
 
-  &:invalid {
-    outline: $status_error solid;
+  // &:invalid {
+  //   outline: $status_error solid;
 
-    & + svg {
-      stroke: $status_error;
-    }
-  }
+  //   & + svg {
+  //     stroke: $status_error;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
