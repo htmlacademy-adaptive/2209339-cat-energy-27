@@ -1,5 +1,5 @@
 .preview__wrapper {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -89,7 +89,7 @@
 }
 
 .preview__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -127,7 +127,7 @@
 }
 
 .preview__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;

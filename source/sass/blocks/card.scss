@@ -61,7 +61,7 @@
 }
 
 .card__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -84,7 +84,7 @@
 }
 
 .card__info {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $lato;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
