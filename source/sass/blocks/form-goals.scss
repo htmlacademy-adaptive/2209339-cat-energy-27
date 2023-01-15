@@ -43,7 +43,7 @@
   }
 
   &:focus .form-goals__mark-radio {
-    border: 1px $grey-3 solid;
+    border: 1px $dark_grey solid;
   }
 
   &:active {
@@ -83,19 +83,24 @@
   }
 }
 
+.form-goals__input {
+  &:focus-visible + .form-goals__mark-radio {
+    outline: 2px $dark_grey solid;
+  }
 
-.form-goals__input:checked + .form-goals__mark-radio::before {
-  content: "";
-  position: absolute;
-  top: 28%;
-  right: 28%;
-  width: 13px;
-  height: 13px;
-  background-color: $green;
-  border-radius: 50%;
+  &:checked + .form-goals__mark-radio::before {
+    content: "";
+    position: absolute;
+    top: 28%;
+    right: 28%;
+    width: 13px;
+    height: 13px;
+    background-color: $green;
+    border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

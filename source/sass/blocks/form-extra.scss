@@ -87,29 +87,7 @@
   }
 }
 
-.form-extra__item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  &:hover .form-goals__mark {
-    border: 1px $grey-3 solid;
-  }
-
-  &:focus .form-goals__mark {
-    border: 1px $grey-3 solid;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
-}
-
-.form-goals__mark {
+.form-extra__mark {
   position: relative;
   display: block;
   width: 30px;
@@ -122,21 +100,49 @@
   }
 }
 
-.form-extra__input:checked + .form-goals__mark::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 6px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../../img/icon/check-mark.svg");
-  background-repeat: no-repeat;
+.form-extra__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 
-  @media (min-width: $tablet-width) {
-    top: 7px;
-    right: 7px;
-    width: 26px;
-    height: 26px;
-    background-image: url("../../img/icon/tick.svg");
+  &:hover .form-extra__mark {
+    border: 1px $grey-3 solid;
+  }
+
+  &:focus .form-extra__mark {
+    border: 1px $dark_grey solid;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.form-extra__input {
+  &:focus-visible + .form-extra__mark {
+    outline: 2px $dark_grey solid;
+  }
+
+  &:checked + .form-extra__mark::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/icon/check-mark.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 7px;
+      right: 7px;
+      width: 26px;
+      height: 26px;
+      background-image: url("../../img/icon/tick.svg");
+    }
   }
 }
