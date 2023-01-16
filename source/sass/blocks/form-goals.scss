@@ -1,6 +1,6 @@
 .form-goals {
   margin: 0;
-  padding: 20px;
+  padding: 25px 20px 19px 20px;
   border: none;
   border-top: 1px $border_grey-2 solid;
   border-bottom: 1px $border_grey-2 solid;
@@ -76,6 +76,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $dark_grey-2;
+  max-width: 80%;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
