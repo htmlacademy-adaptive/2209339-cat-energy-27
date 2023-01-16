@@ -24,12 +24,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    border-top: 1px $border_grey solid;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 0 110px;
-    width: 1220px;
+    max-width: 1220px;
+    border: none;
   }
 }
 
